@@ -9,6 +9,9 @@ import {Autoplay, FreeMode, Pagination} from "swiper/modules";
 import "../css/owl.carousel.min.css"
 import "../css/owl.theme.default.min.css"
 import "../css/jquery-ui.css"
+import "../css/magnific-popup.css"
+import "../css/aos.css"
+import {Link} from "react-router-dom";
 
 
 
@@ -99,66 +102,66 @@ function Home() {
                         </div>
                         <div className="row">
                             <div className="col-sm-6 col-lg-4 text-center item mb-4">
-                                <a href="shop-single.html">
+                                <Link to={"/detail"}>
                                     {" "}
                                     <img src="../../public/images/product_01.png" alt="Image" />
-                                </a>
+                                </Link>
                                 <h3 className="text-dark">
-                                    <a href="shop-single.html">Bioderma</a>
+                                    <Link to={"/detail"}>Bioderma</Link>
                                 </h3>
                                 <p className="price">
                                     <del>95.00</del> — $55.00
                                 </p>
                             </div>
                             <div className="col-sm-6 col-lg-4 text-center item mb-4">
-                                <a href="shop-single.html">
+                                <Link to={"/detail"}>
                                     {" "}
                                     <img src="../../public/images/product_02.png" alt="Image" />
-                                </a>
+                                </Link>
                                 <h3 className="text-dark">
-                                    <a href="shop-single.html">Chanca Piedra</a>
+                                    <Link to={"/detail"}>Chanca Piedra</Link>
                                 </h3>
                                 <p className="price">$70.00</p>
                             </div>
                             <div className="col-sm-6 col-lg-4 text-center item mb-4">
-                                <a href="shop-single.html">
+                                <Link to={"/detail"}>
                                     {" "}
                                     <img src="../../public/images/product_03.png" alt="Image" />
-                                </a>
+                                </Link>
                                 <h3 className="text-dark">
-                                    <a href="shop-single.html">Umcka Cold Care</a>
+                                    <Link to={"/detail"}>Umcka Cold Care</Link>
                                 </h3>
                                 <p className="price">$120.00</p>
                             </div>
                             <div className="col-sm-6 col-lg-4 text-center item mb-4">
-                                <a href="shop-single.html">
+                                <Link to={"/detail"}>
                                     {" "}
                                     <img src="../../public/images/product_04.png" alt="Image" />
-                                </a>
+                                </Link>
                                 <h3 className="text-dark">
-                                    <a href="shop-single.html">Cetyl Pure</a>
+                                    <Link to={"/detail"}>Cetyl Pure</Link>
                                 </h3>
                                 <p className="price">
                                     <del>45.00</del> — $20.00
                                 </p>
                             </div>
                             <div className="col-sm-6 col-lg-4 text-center item mb-4">
-                                <a href="shop-single.html">
+                                <Link to={"/detail"}>
                                     {" "}
                                     <img src="../../public/images/product_05.png" alt="Image" />
-                                </a>
+                                </Link>
                                 <h3 className="text-dark">
-                                    <a href="shop-single.html">CLA Core</a>
+                                    <Link to={"/detail"}>CLA Core</Link>
                                 </h3>
                                 <p className="price">$38.00</p>
                             </div>
                             <div className="col-sm-6 col-lg-4 text-center item mb-4">
-                                <a href="shop-single.html">
+                                <Link to={"/detail"}>
                                     {" "}
                                     <img src="../../public/images/product_06.png" alt="Image" />
-                                </a>
+                                </Link>
                                 <h3 className="text-dark">
-                                    <a href="shop-single.html">Poo Pourri</a>
+                                    <Link to={"/detail"}>Poo Pourri</Link>
                                 </h3>
                                 <p className="price">
                                     <del>$89</del> — $38.00
@@ -385,12 +388,6 @@ function Home() {
                     </div>
                 </div>
             </>
-
-
-
-
-
-
             <Footer></Footer>
         </>
     );

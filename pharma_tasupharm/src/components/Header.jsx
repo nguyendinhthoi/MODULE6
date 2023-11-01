@@ -1,5 +1,6 @@
 import React from 'react';
 import "../css/style.css"
+import {Link} from "react-router-dom";
 function Header() {
     return (
         <>
@@ -23,9 +24,9 @@ function Header() {
                         <div className="d-flex align-items-center justify-content-between">
                             <div className="logo">
                                 <div className="site-logo">
-                                    <a href="index.html" className="js-logo-clone">
+                                    <Link className="js-logo-clone" to={"/"}>
                                         Pharma
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="main-nav d-none d-lg-block">
@@ -35,7 +36,7 @@ function Header() {
                                 >
                                     <ul className="site-menu js-clone-nav d-none d-lg-block">
                                         <li className="active">
-                                            <a href="index.html">Home</a>
+                                            <Link to={"/"}>Home</Link>
                                         </li>
                                         <li>
                                             <a href="shop.html">Store</a>
@@ -84,10 +85,10 @@ function Header() {
                                 <a href="#" className="icons-btn d-inline-block js-search-open">
                                     <span className="icon-search" />
                                 </a>
-                                <a href="cart.html" className="icons-btn d-inline-block bag">
+                                <Link className="icons-btn d-inline-block bag" to={"/cart"}>
                                     <span className="icon-shopping-bag" />
                                     <span className="number">2</span>
-                                </a>
+                                </Link>
                                 <a
                                     href="#"
                                     className="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"
